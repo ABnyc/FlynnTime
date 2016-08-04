@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlynnTime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,94 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xYr-82-9e9">
+                                <rect key="frame" x="0.0" y="72" width="600" height="528"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FlynnCell" rowHeight="74" id="nCS-Cf-hP5" customClass="FlynnCell" customModule="FlynnTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nCS-Cf-hP5" id="Hvq-Ek-68x">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zvs-rv-eB7">
+                                                    <rect key="frame" x="27" y="0.0" width="96" height="74"/>
+                                                    <color key="backgroundColor" red="1" green="0.38118435070000001" blue="0.65204435660000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="75" id="NLt-jH-StJ"/>
+                                                        <constraint firstAttribute="width" constant="75" id="bMK-be-JTi"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="NLt-jH-StJ"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z0t-l2-IBa">
+                                                    <rect key="frame" x="131" y="0.0" width="461" height="74"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="74" id="Jnh-Gs-L0b"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="Jnh-Gs-L0b"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Zvs-rv-eB7" secondAttribute="bottom" constant="3" id="0Xi-cp-17j"/>
+                                                <constraint firstItem="Z0t-l2-IBa" firstAttribute="top" secondItem="Hvq-Ek-68x" secondAttribute="top" constant="3" id="ENC-mE-DDz"/>
+                                                <constraint firstItem="Zvs-rv-eB7" firstAttribute="leading" secondItem="Hvq-Ek-68x" secondAttribute="leading" constant="8" id="fPS-24-qn8"/>
+                                                <constraint firstItem="Zvs-rv-eB7" firstAttribute="top" secondItem="Hvq-Ek-68x" secondAttribute="top" constant="3" id="gcV-r9-Nv6"/>
+                                                <constraint firstAttribute="bottom" secondItem="Z0t-l2-IBa" secondAttribute="bottom" constant="3" id="mK6-7N-xnU"/>
+                                                <constraint firstItem="Z0t-l2-IBa" firstAttribute="leading" secondItem="Zvs-rv-eB7" secondAttribute="trailing" constant="8" id="uEi-gE-zQK"/>
+                                                <constraint firstAttribute="trailing" secondItem="Z0t-l2-IBa" secondAttribute="trailing" constant="8" id="x0t-6t-Atm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="mainImg" destination="Zvs-rv-eB7" id="VNA-4P-yet"/>
+                                            <outlet property="mainLbl" destination="Z0t-l2-IBa" id="fdZ-60-paH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Its Flynn Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sa-pF-PFH">
+                                <rect key="frame" x="0.0" y="-1" width="600" height="72"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="7w9-fA-c22"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xYr-82-9e9" secondAttribute="bottom" id="0BC-I6-K36"/>
+                            <constraint firstItem="xYr-82-9e9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="23h-Ka-wtF"/>
+                            <constraint firstAttribute="trailing" secondItem="xYr-82-9e9" secondAttribute="trailing" id="A3F-cx-8Z8"/>
+                            <constraint firstAttribute="trailing" secondItem="5sa-pF-PFH" secondAttribute="trailing" id="Qtg-9L-EkT"/>
+                            <constraint firstItem="5sa-pF-PFH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="atJ-2E-QEJ"/>
+                            <constraint firstItem="5sa-pF-PFH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wuB-ts-h5e"/>
+                            <constraint firstItem="xYr-82-9e9" firstAttribute="top" secondItem="5sa-pF-PFH" secondAttribute="bottom" id="xSa-Fg-QwR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="xYr-82-9e9" id="sg1-mk-3X6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="372" y="346"/>
         </scene>
     </scenes>
 </document>

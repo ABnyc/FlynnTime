@@ -12,6 +12,7 @@
 		2BE4C32A1D52E45500A14F02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE4C3281D52E45500A14F02 /* Main.storyboard */; };
 		2BE4C32C1D52E45500A14F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE4C32B1D52E45500A14F02 /* Assets.xcassets */; };
 		2BE4C32F1D52E45500A14F02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE4C32D1D52E45500A14F02 /* LaunchScreen.storyboard */; };
+		2BE4C3371D53907800A14F02 /* FlynnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4C3361D53907800A14F02 /* FlynnCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2BE4C32B1D52E45500A14F02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BE4C32E1D52E45500A14F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BE4C3301D52E45500A14F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE4C3361D53907800A14F02 /* FlynnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlynnCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				2BE4C3241D52E45500A14F02 /* AppDelegate.swift */,
-				2BE4C3261D52E45500A14F02 /* ViewController.swift */,
+				2BE4C3361D53907800A14F02 /* FlynnCell.swift */,
 				2BE4C3281D52E45500A14F02 /* Main.storyboard */,
+				2BE4C3261D52E45500A14F02 /* ViewController.swift */,
 				2BE4C32B1D52E45500A14F02 /* Assets.xcassets */,
 				2BE4C32D1D52E45500A14F02 /* LaunchScreen.storyboard */,
 				2BE4C3301D52E45500A14F02 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE4C3371D53907800A14F02 /* FlynnCell.swift in Sources */,
 				2BE4C3271D52E45500A14F02 /* ViewController.swift in Sources */,
 				2BE4C3251D52E45500A14F02 /* AppDelegate.swift in Sources */,
 			);
